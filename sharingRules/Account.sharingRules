@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Acceso_Lectura_a_todas_las_cuentas_de_clientes</fullName>
+        <accessLevel>Read</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>None</caseAccessLevel>
+            <contactAccessLevel>Read</contactAccessLevel>
+            <opportunityAccessLevel>None</opportunityAccessLevel>
+        </accountSettings>
+        <label>Acceso Lectura a todas las cuentas de clientes</label>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Cuentas_Regional_Zona_3</fullName>
+        <accessLevel>Edit</accessLevel>
+        <accountSettings>
+            <caseAccessLevel>Edit</caseAccessLevel>
+            <contactAccessLevel>Edit</contactAccessLevel>
+            <opportunityAccessLevel>Edit</opportunityAccessLevel>
+        </accountSettings>
+        <description>Da acceso Escritura a las Cuentas cuyos propietarios pertenezcan a Sucursales dependientes de la Gerencia Regional Zona 3, a todos los usuarios que estén asociados al Grupo Público &quot;Retail Banking Regional Zona 3&quot;</description>
+        <label>Cuentas Regional Zona 3</label>
+        <sharedTo>
+            <group>Retail_Banking_Regional_Zonal_3</group>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>Retail_Banking_Regional_Manager_Zona_3</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

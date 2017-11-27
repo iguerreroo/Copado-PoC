@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Candidato Inversiones Persona Natural</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Perfil_de_riesgo_percibido__c</fieldNames>
+        <fieldNames>Name</fieldNames>
+        <fieldNames>Apellido_materno__c</fieldNames>
+        <fieldNames>RUT__c</fieldNames>
+        <fieldNames>Marque_si_sera_produto_BIA__c</fieldNames>
+        <info>&lt;p&gt;1) Contacte al candidato para ofrecer los productos de inversión&lt;/p&gt;&lt;p&gt;2) Si no está interesado, seleccione &amp;quot;No califica&amp;quot; y siga las instrucciones en pantalla&lt;/p&gt;&lt;p&gt;3) Si está interesado, determine el perfil de inversionista percibido y complete la información obtenida&lt;/p&gt;&lt;p&gt;4) En caso necesario obtenga la documentación requerida por Área Clientes&lt;/p&gt;&lt;p&gt;​5) Si cliente requiere producto BIA, marque casilla &amp;quot;Ofrecer producto BIA&amp;quot;&lt;/p&gt;&lt;p&gt;6) Convierta el Lead en Oportunidad, para continuar el proceso, seleccionando la función &amp;quot;Convertir&amp;quot;&lt;/p&gt;</info>
+        <picklistValueName>Contacto</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Motivo_rechazo__c</fieldNames>
+        <fieldNames>Otro_motivo_de_rechazo__c</fieldNames>
+        <info>&lt;p&gt;1) Presione Modificar&lt;/p&gt;&lt;p&gt;2) Seleccione &amp;quot;Motivo de Rechazo&amp;quot; más adecuado&amp;quot; (&amp;quot;No cumple requiscitos&amp;quot;, &amp;quot;Sin interés&amp;quot;, etc...)&lt;/p&gt;&lt;p&gt;3) Presione &amp;quot;Guardar&amp;quot;&lt;/p&gt;</info>
+        <picklistValueName>No califica</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Name</fieldNames>
+        <fieldNames>Apellido_materno__c</fieldNames>
+        <fieldNames>Phone</fieldNames>
+        <info>&lt;p&gt;1) Revise si candidato cumple requisitos (compliance, lista de cautela).&lt;/p&gt;&lt;p&gt;1.1) Si No cumple, seleccione &amp;quot;No califica&amp;quot; y siga las instrucciones en pantalla.&lt;/p&gt;&lt;p&gt;1.2) Si cumple o le falta información para determinarlo, avance a la etapa de &amp;quot;Contacto&amp;quot;. Para ello seleccione &amp;quot;Contacto&amp;quot; y luego seleccione &amp;quot;Marcar como Estado actual&amp;quot;. &lt;/p&gt;</info>
+        <picklistValueName>Precalificación</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Lead_Inversiones</recordTypeName>
+</PathAssistant>

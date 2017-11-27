@@ -1,0 +1,3 @@
+<apex:page standardController="Lead" extensions="BICE_Lead_Int10lController" action="{!start}">
+Creando candidato en CIF...
+</apex:page>
